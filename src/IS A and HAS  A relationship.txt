@@ -1,0 +1,36 @@
+✅ 1. IS-A Relationship (Inheritance / Generalization)
+Meaning: One class is a type of another class.
+
+Represents: Inheritance (extends in Java or subclassing in general).
+
+Example:
+
+class Vehicle { }
+class Car extends Vehicle { }
+Here, Car is a Vehicle.
+
+UML: Represented with a solid line and hollow arrowhead pointing to the parent.
+
+✅ 2. HAS-A Relationship (Composition / Aggregation)
+Meaning: One class has a reference to another class.
+
+Represents: Composition or Aggregation (object contains another object).
+
+Example:
+
+class Engine { }
+
+class Car {
+    private Engine engine;  // Car HAS-A Engine
+}
+Car has an Engine.
+
+Composition: Strong ownership (lifespan tied together).
+
+Aggregation: Weaker relationship (independent lifespan).
+
+UML:
+
+Composition: Solid diamond arrow at the container class.
+
+Aggregation: Hollow diamond arrow.
